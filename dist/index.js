@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const empresa_1 = require("./empresa");
+const funcionario_1 = require("./funcionario");
+const telefone_1 = require("./telefone");
+const endereco_1 = require("./endereco");
+let tel1 = new telefone_1.Telefone("11", "999999999");
+let end1 = new endereco_1.Endereco(100, "Rua das Flores", "Centro", "São Paulo");
+let func1 = new funcionario_1.Funcionario("Pedro", "001", "11122233344", end1, tel1);
+let empresa = new empresa_1.Empresa([func1], end1, "Empresa LTDA", "Tech Solutions", "12345678000199");
+console.log(empresa.descreverEmpresa());
