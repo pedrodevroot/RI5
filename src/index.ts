@@ -23,8 +23,8 @@ let func1 = new Funcionario(
 let empresa = new Empresa(
   [func1],
   end1,
-  "Empresa LTDA",
-  "Tech Solutions",
+  "Empresa easter egg",
+  "O easter egg desse código é esse",
   "12345678000199"
 )   
 
